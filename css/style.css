@@ -1,3 +1,20 @@
+:root {
+    --textBlackColor: #000;
+    --blueColor: rgb(52, 90, 250);
+    --font: 'Roboto', sans-serif;
+    --mtextweight: 300;
+    --ltextweight: 400;
+    --xltextweight: 700; 
+    --headerHeight: 5rem;
+}
+
+/* Font */
+html {
+    font-family: var(--font);
+}
+
+/* Header */
+
 header {
     position: fixed;
     margin: 0;
@@ -5,6 +22,89 @@ header {
     left: 0;
 
     width: 100vw;
-    height: 5rem;
-    background-color: blue;
+    height: var(--headerHeight);
+    background-color: white;
+    z-index: 1;
 }
+
+header ul {
+    padding: 0 1rem;
+}
+
+header li {
+    padding: 0 0 0 2rem;
+}
+
+header a {
+    font-weight: var(--ltextweight);
+    font-size: 1rem;
+    color: var(--textBlackColor);
+    text-align: center;
+    filter: opacity(60%);
+    padding: 1rem 0.2rem;
+    text-decoration: none;
+}
+
+header .logo {
+    flex-grow: 0;
+}
+
+header .logo img {
+    object-fit: contain;
+    margin: 1rem;
+}
+
+header .section1 {
+    flex-grow: 4;
+
+}
+
+header .section2 {
+    flex-grow: 1;
+    justify-content: flex-end;
+    
+}
+
+header .start {
+    flex-grow: 0;
+    object-fit: contain;
+}
+
+/* Main */
+
+main h1 {
+    font-weight: var(--xltextweight);
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+
+main h2 {
+    font-weight: var(--mtextweight);
+    font-size: 1.3rem;
+    filter: opacity(70%)
+}
+
+main .jumbotron {
+    background-color: rgb(180, 200, 220);
+    width: 100%;
+}
+
+main .jumboDescr {
+    margin-top: 2rem;
+}
+
+main .jumboDescr button {
+    width: fit-content;
+    white-space: nowrap;
+}
+
+main .jumboDescr button h2 {
+    margin: 0.1rem 1rem;
+    filter: opacity(100%);
+}
+
+main .jumboImg img {
+    position: absolute;
+    width: 120%;
+}
+
