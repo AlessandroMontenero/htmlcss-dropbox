@@ -1,110 +1,72 @@
-:root {
-    --textBlackColor: #000;
-    --blueColor: rgb(52, 90, 250);
-    --font: 'Roboto', sans-serif;
-    --mtextweight: 300;
-    --ltextweight: 400;
-    --xltextweight: 700; 
-    --headerHeight: 5rem;
-}
-
-/* Font */
-html {
-    font-family: var(--font);
-}
-
 /* Header */
 
 header {
     position: fixed;
-    margin: 0;
     top: 0;
     left: 0;
-
-    width: 100vw;
+    width: 100%;
+    background: linear-gradient(to top, rgb(236, 236, 236), white);
     height: var(--headerHeight);
-    background-color: white;
     z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header ul {
-    padding: 0 1rem;
-}
-
-header li {
-    padding: 0 0 0 2rem;
-}
-
-header a {
-    font-weight: var(--ltextweight);
-    font-size: 1rem;
-    color: var(--textBlackColor);
-    text-align: center;
-    filter: opacity(60%);
-    padding: 1rem 0.2rem;
-    text-decoration: none;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
 }
 
 header .logo {
-    flex-grow: 0;
+    width: min-content;
+    margin: 1rem;   
 }
 
-header .logo img {
-    object-fit: contain;
-    margin: 1rem;
+header nav .start {
+    width: min-content;
 }
 
-header .section1 {
-    flex-grow: 4;
-
-}
-
-header .section2 {
+header .navRaw1 {
     flex-grow: 1;
-    justify-content: flex-end;
-    
 }
 
-header .start {
-    flex-grow: 0;
-    object-fit: contain;
+header .navRaw2 {
+    text-align: left;
 }
 
 /* Main */
 
-main h1 {
-    font-weight: var(--xltextweight);
-    font-size: 5rem;
-    margin: 2rem 0;
+.containerJumbo {
+    display: flex;
+    justify-content: center;
+    background-color: var(--jumbotronBackgroundColor);
 }
 
-main h2 {
-    font-weight: var(--mtextweight);
-    font-size: 1.3rem;
-    filter: opacity(70%)
+.jumbotron {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-main .jumbotron {
-    background-color: rgb(180, 200, 220);
+.jumboTitle {
     width: 100%;
 }
 
-main .jumboDescr {
+.jumboDescription {
+    width: 30%;
     margin-top: 2rem;
 }
 
-main .jumboDescr button {
-    width: fit-content;
-    white-space: nowrap;
+.jumboImg {
+    width: 70%;
 }
 
-main .jumboDescr button h2 {
-    margin: 0.1rem 1rem;
-    filter: opacity(100%);
-}
-
-main .jumboImg img {
-    position: absolute;
-    width: 120%;
+.jumboImg img {
+    width: 100%;
+    transform: translate(0, 4rem);
 }
 

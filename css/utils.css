@@ -1,87 +1,80 @@
-.break {
-    flex-basis: 100%;
-    height: 0;
-  }
+:root {
+    --headerHeight: 4rem;
+    
+    --blackTextColor: black;
+    --lightblackTextColor: rgba(0, 0, 0, 0.7);
+    
+    --blueButtonColor: rgb(40, 95, 240);
+    --blueButtonTextColor: white;
+    --jumbotronBackgroundColor: rgb(185, 207, 229);
+} 
 
-/* List  */
-
-ul {
-    list-style-type: none;
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
-li {
-    float: left;
-  }
-
-li a {
-    display: block;
-  }
-
-
-/* Header Flex Settings */
-
-header {
-    display: flex;
-    justify-content: space-around;
-}
-
-header .logo,
-header .section1,
-header .section2,
-header .start {
-    display: flex;
-    align-content: center;   
-    list-style: none;
-}
-
-/* Buttons style */
-
-button {
-    background-color: var(--blueColor);
-    margin: 1rem 0.5rem;
-}
-
-html button a {
-    color: white;
-    padding: 2px 13px;
-    filter: opacity(100%);
+a {
     text-decoration: none;
 }
 
-/* Main */
-main {
-    margin-top: var(--headerHeight);
-    width: 100vw;
+h1 {
+    color: var(--blackTextColor);
+    font-weight: bolder;
+    font-size: 5.5rem;
+    margin-bottom: 0;
 }
 
-/* Jumbotron Flex Settings */
-
-main .jumbotron {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-main .jumboTitle {
-    width: 60%;
-    text-align: center;
-}
-
-main .jumboDescr {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-main .jumboImg {
-    width: 50%;
-    position: relative;
-    top: 3.8rem;
+h4 {
+    color: var(--lightblackTextColor);
+    font-weight: 400;
+    font-size: 1.2rem;
+    
 }
 
 .fa-arrow-down {
     font-size: 3rem;
+    margin-top: 4rem;
+}
+
+/* Containers */
+
+.containerJumbo {
+    width: 100%;
+    position: absolute;
+    top: var(--headerHeight);
+    left: 0;
+}
+
+/* List */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 1.5rem;
+}
+
+li a {
+    display: block;
+}
+
+/* Buttons */
+
+button {
+    margin: 2rem 1rem 2rem 0;
+    padding: 0.2rem;
+    border: none;
+}
+
+button h4 {
+    color: var(--blueButtonTextColor);
+    margin: 0.5rem 1rem;
+}
+
+button.blue {
+    background-color: var(--blueButtonColor);
 }
