@@ -35,6 +35,10 @@ h2 {
 
 }
 
+.columnContent h3 {
+    font-size: 2rem;
+}
+
 h3 {
     color: var(--blackTextColor);
     font-weight: bold;

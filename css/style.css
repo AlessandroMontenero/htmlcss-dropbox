@@ -76,7 +76,7 @@ header .navRaw2 {
 /* Plans */
     .plans {
         margin-top: 8rem;
-        width: 50%;
+        width: 55%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
