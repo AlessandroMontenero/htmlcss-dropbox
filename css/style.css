@@ -292,6 +292,8 @@ header .navRaw2 {
 
 .faqTitle i {
     padding: 2rem;
+    transform: rotate(0);
+    transition: transform 0.4s;
 }
 
 .faq section:last-child {
@@ -309,6 +311,10 @@ header .navRaw2 {
     font-size: 1rem;
     display: block;
     height: 5rem;
+}
+
+.faq section:hover i {
+    transform: rotate(180deg);
 }
 
 /* Footer */
