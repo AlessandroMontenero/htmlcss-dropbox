@@ -9,6 +9,11 @@
     --jumbotronBackgroundColor: rgb(185, 207, 229);
 } 
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
@@ -61,6 +66,12 @@ h4 {
     font-weight: 400;
     font-size: 1.2rem;
     
+}
+
+.featuresHeader h3,
+.featuresHeader h4,
+.featuresHeader button {
+    margin-left: 1rem;
 }
 
 .featuresTiles section h5 {
@@ -153,6 +164,7 @@ button.white h4 {
 
 .columnButton{
     width: 100%;
+    height: 5rem;
     margin: 3rem 0;
 }
 

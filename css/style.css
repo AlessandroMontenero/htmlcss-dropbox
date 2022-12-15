@@ -70,7 +70,7 @@ header .navRaw2 {
 
     .jumboImg img {
         position: absolute;
-        width: 100%;
+        width: 120%;
         transform: translate(0, 4rem);
     }
 
@@ -137,7 +137,8 @@ header .navRaw2 {
 
     .columnRows {
         display: flex;
-        min-height: 4rem;
+        min-height: 4.5rem;
+        max-height: 4.5rem;
         width: 100%;
     }
 
@@ -298,15 +299,16 @@ header .navRaw2 {
 }
 
 .faqContent {
-    font-size: 0;
+    color: white;
     height: 0;
-    transition: height 0.5s;
+    transition: height 0.2s, color 0.1s;
 }
 
 .faq section:hover .faqContent {
+    color: black;
     font-size: 1rem;
     display: block;
-    height: 10rem;
+    height: 5rem;
 }
 
 /* Footer */
@@ -328,6 +330,7 @@ footer .hr {
     background-color: white;
     margin-right: 80%;
     margin-left: 0;
+    margin-bottom: 0;
     height: 3px;
 }
 
