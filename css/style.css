@@ -279,7 +279,6 @@ header .navRaw2 {
 
 .faq {
     width: 40%;
-    height: 10rem;
 }
 
 .faqTitle {
@@ -308,4 +307,48 @@ header .navRaw2 {
     font-size: 1rem;
     display: block;
     height: 10rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 10rem;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .container {
+    width: 60%;
+}
+
+footer .hr {
+    width: 100%;
+    background-color: white;
+    margin-right: 80%;
+    margin-left: 0;
+    height: 3px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer section.card {
+    width: 20%;
+}
+
+footer .lang {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    line-height: 3rem;
+}
+
+.footerFA {
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
 }
