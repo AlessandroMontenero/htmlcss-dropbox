@@ -274,3 +274,38 @@ header .navRaw2 {
 .footerBox span {
     max-width: 40% ;
 }
+
+/* Faq */
+
+.faq {
+    width: 40%;
+    height: 10rem;
+}
+
+.faqTitle {
+    line-height: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqTitle i {
+    padding: 2rem;
+}
+
+.faq section:last-child {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.faqContent {
+    font-size: 0;
+    height: 0;
+    transition: height 0.5s;
+}
+
+.faq section:hover .faqContent {
+    font-size: 1rem;
+    display: block;
+    height: 10rem;
+}
