@@ -51,6 +51,7 @@ header .navRaw2 {
         width: 65%;
         display: flex;
         flex-wrap: wrap;
+        margin-top:  var(--headerHeight);
     }
 
     .jumboTitle {
@@ -136,7 +137,7 @@ header .navRaw2 {
 
     .columnRows {
         display: flex;
-        height: 4rem;
+        min-height: 4rem;
         width: 100%;
     }
 
@@ -148,10 +149,7 @@ header .navRaw2 {
         margin: 1rem;
     }
 
-    .buyNow a {
-        color: blue;
-        text-decoration:underline;
-    }
+    
 
 .columnContent span:last-child {
     padding-bottom: 3rem;
@@ -175,7 +173,6 @@ header .navRaw2 {
 /* Features */
 
 .features {
-    height: 30rem;
     display: flex;
 }
 
@@ -219,4 +216,61 @@ header .navRaw2 {
 
 .featuresTiles section img {
     width: 100%;
+}
+
+/* Partners */
+
+.partners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.Box {
+    width: calc(100% / 3);
+    aspect-ratio: auto 1 / 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Box img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.smallBox {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.centralBox {
+    box-sizing: border-box;
+    padding: 2rem;
+    align-content: flex-start;
+}
+
+.quoteBox {
+    width: 100%;
+}
+
+.partnersTitle {
+    width: 55%;
+    padding: 4rem 0;
+}
+
+.footerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 200, 220);
+}
+
+.footerBox span {
+    max-width: 40% ;
 }

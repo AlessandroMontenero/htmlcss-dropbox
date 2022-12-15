@@ -35,6 +35,12 @@ h2 {
 
 }
 
+.footerBox h2 {
+    font-size: 3rem;
+    color: rgb(89, 19, 44);
+    padding: 4rem 0;
+}
+
 .columnContent h3 {
     font-size: 2rem;
 }
@@ -64,6 +70,11 @@ h5 {
     font-weight: bold;
     font-size: 1.2rem;
 
+}
+
+.buyNow a {
+    color: blue;
+    text-decoration:underline;
 }
 
 .fa-arrow-down {
@@ -121,6 +132,15 @@ button h4 {
     background-color: var(--blueButtonColor);
 }
 
+.white {
+    border: 0.5px solid var(--lightblackTextColor);
+    background-color: white;
+}
+
+button.white h4 {
+    color: var(--lightblackTextColor);
+}
+
 .columnButton{
     width: 100%;
     margin: 3rem 0;
@@ -128,6 +148,7 @@ button h4 {
 
 .team .columnButton {
     width: fit-content;
+    cursor: pointer;
 }
 
 .teamButton {
@@ -139,8 +160,9 @@ button h4 {
 /* Horizontal Rule */
 .hr {
     margin: 4rem 0;
-    width: 30%;
+    width: 40%;
     background-color: var(--lightblackTextColor);
+    filter: opacity(60%);
     height: 2px;
     margin-left: 1.5rem;
 }
@@ -148,4 +170,49 @@ button h4 {
 /* Check Blue */
 .fa-check {
     color: blue;
+}
+
+/* Boxes Color */
+
+.designitBox {
+    box-sizing: border-box;
+    background-clip: content-box;
+    background-color: rgb(170, 210, 160);
+    border: 1.5rem solid rgb(210, 230, 200);
+}
+
+.asuBox {
+    background-color: rgb(89, 19, 43);
+}
+
+.ufBox {
+    background-color: rgb(60, 140, 200);
+}
+
+.toppsBox {
+    background-color: rgb(230, 60, 40);
+}
+
+.wbrBox {
+    background-color: rgb(190, 40, 40);
+}
+
+.hcBox {
+    background-color: rgb(180, 200, 220);
+}
+
+.lpBox {
+    background-color: rgb(19, 30, 120);
+}
+
+.ccoBox {
+    background-color: rgb(240, 210, 80);
+}
+
+.centralBox {
+    background-color: rgb(245, 245, 245);
+}
+
+.fillColor {
+    filter: invert(100%);
 }
