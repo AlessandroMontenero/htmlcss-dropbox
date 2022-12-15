@@ -109,9 +109,12 @@ header .navRaw2 {
 
     .columnTitle {
         width: 100%;
-        height: 5rem;
+        height: 3rem;
         border-bottom: 0.5px solid var(--lightblackTextColor);
-        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .columnContent {
@@ -154,3 +157,66 @@ header .navRaw2 {
     padding-bottom: 3rem;
 }
 
+.plansTeam {
+    margin: 2rem 0;
+    border: 0.5px solid var(--lightblackTextColor);
+}
+
+.teamContent.team {
+    display: flex;
+    margin: 2rem;
+
+}
+
+.teamContent {
+    width: 95%;
+}
+
+/* Features */
+
+.features {
+    height: 30rem;
+    display: flex;
+}
+
+.featuresHeader {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featuresHeader img {
+    object-fit: contain;
+    width: 30rem;
+}
+
+.featuresHeader span {
+    width: 55%;
+}
+
+.featuresContent {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+}
+
+.featuresTitle {
+    width: 100%;
+}
+
+.featuresTiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.featuresTiles section {
+    width: 27%;
+}
+
+.featuresTiles section img {
+    width: 100%;
+}

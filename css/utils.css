@@ -53,6 +53,12 @@ h4 {
     
 }
 
+.featuresTiles section h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
 h5 {
     color: var(--blackTextColor);
     font-weight: bold;
@@ -78,6 +84,7 @@ h5 {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* List */
@@ -117,6 +124,15 @@ button h4 {
 .columnButton{
     width: 100%;
     margin: 3rem 0;
+}
+
+.team .columnButton {
+    width: fit-content;
+}
+
+.teamButton {
+    white-space: nowrap;
+    margin-top: 1rem;
 }
 
 
